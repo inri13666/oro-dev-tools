@@ -1,0 +1,17 @@
+services:
+    gorgo_debug_datagrid.command.debug_datagrid:
+        class: 'Gorgo\Bundle\DatagridDebugBundle\Command\DebugDatagridCommand'
+        arguments:
+            - '@oro_datagrid.configuration.provider.chain'
+            - '@oro_datagrid.datagrid.builder'
+        tags:
+            - { name: console.command }
+
+    gorgo_debug_datagrid.command.profile_datagrid:
+        class: 'Gorgo\Bundle\DatagridDebugBundle\Command\ProfileDatagridCommand'
+        arguments:
+            - '@event_dispatcher'
+            - '@oro_datagrid.datagrid.manager'
+            - '@translator'
+        tags:
+            - { name: console.command }

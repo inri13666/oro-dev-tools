@@ -1,0 +1,2 @@
+bundles:
+    - { name: Gorgo\Bundle\ImportDebugBundle\GorgoImportDebugBundle }

@@ -1,0 +1,25 @@
+{
+  "name": "gorgo13/import-debug-bundle",
+  "type": "symfony-bundle",
+  "description": "",
+  "keywords": [],
+  "homepage": "http://gorgo.in/import-debug",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Nikita Makarov",
+      "email": "mesaverde228@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.2",
+    "oro/platform": ">=2.6.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Gorgo\\Bundle\\ImportDebugBundle": ""
+    }
+  },
+  "target-dir": "Gorgo/Bundle/ImportDebugBundle"
+}

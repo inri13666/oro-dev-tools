@@ -1,0 +1,39 @@
+services:
+    gorgo_import_debug.command.export:
+        class: 'Gorgo\Bundle\ImportDebugBundle\Command\ExportCommand'
+        arguments:
+            - '@oro_importexport.handler.export'
+            - '@oro_importexport.file.file_manager'
+        tags:
+            - { name: console.command }
+
+    gorgo_import_debug.command.export_template:
+        class: 'Gorgo\Bundle\ImportDebugBundle\Command\ExportTemplateCommand'
+        arguments:
+            - '@oro_importexport.handler.export'
+            - '@oro_importexport.file.file_manager'
+        tags:
+            - { name: console.command }
+
+    gorgo_import_debug.command.dump_processors:
+        class: 'Gorgo\Bundle\ImportDebugBundle\Command\DumpProcessorsCommand'
+        arguments:
+            - '@oro_importexport.processor.registry'
+        tags:
+            - { name: console.command }
+
+    gorgo_import_debug.command.dump_tempalte_headers:
+        class: 'Gorgo\Bundle\ImportDebugBundle\Command\DumpExportHeadersCommand'
+        arguments:
+            - '@oro_importexport.handler.export'
+            - '@oro_importexport.file.file_manager'
+        tags:
+            - { name: console.command }
+
+    gorgo_import_debug.command.import:
+        class: 'Gorgo\Bundle\ImportDebugBundle\Command\ImportCommand'
+        arguments:
+            - '@oro_importexport.handler.import.cli'
+            - '@oro_importexport.file.file_manager'
+        tags:
+            - { name: console.command }

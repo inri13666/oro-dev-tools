@@ -1,0 +1,25 @@
+{
+  "name": "gorgo13/database-component",
+  "type": "component",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/inri13666/gorgo13-database-component",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Nikita Makarov",
+      "email": "mesaverde228@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.1",
+    "symfony/process": ">=2.8"
+  },
+  "autoload": {
+    "psr-0": {
+      "Gorgo\\Component\\Database": ""
+    }
+  },
+  "target-dir": "Gorgo/Component/Database"
+}

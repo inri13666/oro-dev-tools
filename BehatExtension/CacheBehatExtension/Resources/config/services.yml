@@ -1,0 +1,11 @@
+services:
+    gorgo_behat_extension.isolation.windows_file_cache_isolator:
+        decorates: oro_behat_extension.isolation.windows_file_cache_isolator
+        class: 'Gorgo\BehatExtension\CacheBehatExtension\Isolator\FileCache\WindowsFileCacheIsolator'
+        arguments:
+            - '@symfony2_extension.kernel'
+            -
+#                - 'doctrine'
+                - 'oro_data'
+                - 'oro_entities'
+                - 'translations'

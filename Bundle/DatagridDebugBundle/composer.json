@@ -1,0 +1,25 @@
+{
+  "name": "gorgo13/datagrid-debug-bundle",
+  "type": "symfony-bundle",
+  "description": "",
+  "keywords": [],
+  "homepage": "http://akuma.in/gorgo/datagrid-debug",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Nikita Makarov",
+      "email": "mesaverde228@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "oro/platform": ">2"
+  },
+  "autoload": {
+    "psr-0": {
+      "Gorgo\\Bundle\\DatagridDebugBundle": ""
+    }
+  },
+  "target-dir": "Gorgo/Bundle/DatagridDebugBundle"
+}
